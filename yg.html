@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="zh-cn">
+  <head>
+    <title>主页</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fa/all.min.css" />
+    <link rel="stylesheet" href="css/fa/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/fa/brands.min.css" />
+    <link rel="stylesheet" href="css/fa/solid.min.css" />
+    <link rel="stylesheet" href="css/fa/svg-with-js.min.css" />
+    <link rel="stylesheet" href="css/fa/v4-font-face.min.css" />
+    <link rel="stylesheet" href="css/fa/v4-shims.min.css" />
+    <link rel="stylesheet" href="css/fa/v5-font-face.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="你正在使用一个过时的浏览器。请更新您的浏览器至Chrome，Edge，Firefox或任意一个现代浏览器。"
+      /></a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>加载中...</p>
+      </div>
+    </div>
+    <!-- <a
+      class="section section-banner d-none d-xl-block"
+      href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
+      target="_blank"
+      style="
+        background-image: url(images/background-02-1920x60.jpg);
+        background-image: -webkit-image-set(
+          url(images/background-02-1920x60.jpg) 1x,
+          url(images/background-02-3840x120.jpg) 2x
+        );
+      "
+      ><img
+        src="images/foreground-02-1600x60.png"
+        srcset="
+          images/foreground-02-1600x60.png  1x,
+          images/foreground-02-3200x120.png 2x
+        "
+        alt=""
+        width="1600"
+        height="310"
+    /></a> -->
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div
+              class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+              data-rd-navbar-toggle=".rd-navbar-collapse"
+            >
+              <span></span>
+            </div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
+              <div class="rd-navbar-aside">
+                <ul class="list-inline navbar-contact-list">
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-phone"></span>
+                      </div> 
+                      <div class="unit-body">
+                        <a href="tel:#">+86 <del>11451419198</del> 广告位招租（</a>
+                      </div>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-envelope"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a href="mailto:#">qigong_bea@foxmail.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-map-marker"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a href="#">Linyi, Shandong, China</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="social-links">
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-qq"
+                      href="https://qm.qq.com/cgi-bin/qm/qr?k=eyxv312Hhj5HuDLBS0D2Su80Jzeam6Ms&jump_from=webapi&authKey=6SDplhrQ12QGzcFKpAQFrDMBxHyJU7d4mn55m0ap3HylzX44oqUjnbU/bgQT0mp+"
+                      title="QQ群"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-wechat"
+                      href="https://nothing.here.qwq/"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-github"
+                      href="https://github.com/qigongbea/"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-bilibili"
+                      href="https://space.bilibili.com/540996565/"
+                    ></a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"
+                      ><img
+                        class="brand-logo-dark"
+                        src="images/logo-default-200x34.png"
+                        alt=""
+                        width="100"
+                        height="17" /><img
+                        class="brand-logo-light"
+                        src="images/logo-inverse-200x34.png"
+                        alt=""
+                        width="100"
+                        height="17"
+                    /></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html">主页</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="projects.html">作品</a>
+                      </li>
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="yg.html"
+                          >约稿相关</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="lab.html">实验室</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-intro context-dark">
+        <div class="intro-bg" style="background: url(images/intro-bg-2.jpg) no-repeat;background-size:cover;background-position: top center;"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 text-center">
+              <h1 class="font-weight-bold wow fadeInLeft">约稿规则</h1>
+              <p class="intro-description wow fadeInRight">但是我什么也没写。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Base typography -->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-md">
+                <h5>友情链接</h5>
+                <h6><a>约稿价格计算器</a></h6>
+              </ul>
+            </div>
+            <div class="col-xl-8">
+              <ul class="list-xl">
+                <li>
+                  <h1>H1 Heading</h1>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+                <li>
+                  <h2>H2 Heading</h2>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+                <li>
+                  <h3>H3 Heading</h3>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+                <li>
+                  <h4>H4 Heading</h4>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+                <li>
+                  <h5>H5 Heading</h5>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+                <li>
+                  <h6>H6 Heading</h6>
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Blockquote-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-lg-10 col-xl-8">
+              <h3>Blockquote</h3>
+              <!--Quote Primary-->
+              <article class="quote-primary">
+                <div class="quote-primary-body">
+                  <svg class="quote-primary-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="21px" height="15px" viewbox="0 0 21 15" overflow="scroll" xml:space="preserve" preserveAspectRatio="none">
+                    <path d="M9.597,10.412c0,1.306-0.473,2.399-1.418,3.277c-0.944,0.876-2.06,1.316-3.349,1.316 c-1.287,0-2.414-0.44-3.382-1.316C0.482,12.811,0,11.758,0,10.535c0-1.226,0.58-2.716,1.739-4.473L5.603,0H9.34L6.956,6.37 C8.716,7.145,9.597,8.493,9.597,10.412z M20.987,10.412c0,1.306-0.473,2.399-1.418,3.277c-0.944,0.876-2.06,1.316-3.35,1.316 c-1.288,0-2.415-0.44-3.381-1.316c-0.966-0.879-1.45-1.931-1.45-3.154c0-1.226,0.582-2.716,1.74-4.473L16.994,0h3.734l-2.382,6.37 C20.106,7.145,20.987,8.493,20.987,10.412z"></path>
+                  </svg>
+                  <div class="quote-primary-text">
+                    <p class="q">Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </div>
+                </div>
+                <div class="quote-primary-footer">
+                  <p class="heading-5 quote-primary-cite">Dennis Williams</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--HTML Text Elements-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8">
+              <h3>HTML Text Elements</h3>
+              <p class="text-block"><span class="text-bold">Bold text</span>
+                <mark>This is a highlighted text</mark><span class="text-strike">This is a strickethrough text</span><span class="text-underline">This is an underlined text.</span><span>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for</span><a class="gray-dark-link" href="#">Link</a><a class="gray-dark-link" href="#">Hover link</a><a class="link-active gray-dark-link" href="#">Press link</a><span>With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</span><span class="tooltip-custom" data-toggle="tooltip" data-placement="top" title="Tooltips">Tooltips</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Unordered List-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-xl-8">
+              <h3>Unordered List</h3>
+              <p>We specialize in a variety of services. Our aim is to deliver the top level of customer service based on your requests.</p>
+              <ul class="list-marked">
+                <li>Consulting</li>
+                <li>Customer Service</li>
+                <li>Innovation</li>
+                <li>Management</li>
+                <li>Ethics</li>
+              </ul>
+              <p>We hope that with our services you will receive the most personalized help in purchasing any kind of products you are looking for.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Ordered List-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-xl-8">
+              <h3>Ordered List</h3>
+              <p>We specialize in a variety of services. Our aim is to deliver the top level of customer service based on your requests.</p>
+              <ol class="list-ordered">
+                <li>Consulting</li>
+                <li>Customer Service</li>
+                <li>Innovation</li>
+                <li>Management</li>
+                <li>Ethics</li>
+              </ol>
+              <p>We hope that with our services you will receive the most personalized help in purchasing any kind of products you are looking for.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Icon List-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <h3>Icon List</h3>
+          <div class="row row-30">
+            <div class="cell-xs-10 col-md-6 col-lg-4">
+              <article class="box-minimal">
+                <div class="box-minimal-icon fa fa-thumbs-up"></div>
+                <h4 class="box-minimal-title">Best Service</h4>
+                <div class="box-minimal-text">
+                  <p>Our mission is to attract and retain customers by providing Best in Class solutions and fostering a profitable, disciplined culture of safety, service, and trust.</p>
+                </div>
+              </article>
+            </div>
+            <div class="cell-xs-10 col-md-6 col-lg-4">
+              <article class="box-minimal">
+                <div class="box-minimal-icon fa fa-group"></div>
+                <h4 class="box-minimal-title">Reputation</h4>
+                <div class="box-minimal-text">
+                  <p>We have established a strong presence in the industry. Our award-winning services earn a reputation for quality and excellence that few can rival.</p>
+                </div>
+              </article>
+            </div>
+            <div class="cell-xs-10 col-md-6 col-lg-4">
+              <article class="box-minimal">
+                <div class="box-minimal-icon fa fa-lock"></div>
+                <h4 class="box-minimal-title">Safety & Security</h4>
+                <div class="box-minimal-text">
+                  <p>Safety for our employees, customers and the community we work with will always remain our primary focus in all the policies, procedures and programs.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Image Centered-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8">
+              <h3>Image Centered</h3>
+              <figure class="figure-light offset-top-30"><img class="img-centered" src="images/single-service-1-770x414.jpg" alt="" width="770" height="207"/>
+                <figcaption>
+                  <p>Reliable Services</p>
+                </figcaption>
+              </figure>
+              <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Image Left-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8">
+              <h3>Image Left</h3>
+              <div class="row row-30">
+                <div class="col-md-6"><img src="images/single-service-1-770x414.jpg" alt="" width="770" height="207"/>
+                </div>
+                <div class="col-md-6">
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Image Right-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8">
+              <h3>Image Right</h3>
+              <div class="row row-30 flex-md-row-reverse">
+                <div class="col-md-6"><img src="images/single-service-1-770x414.jpg" alt="" width="770" height="207"/>
+                </div>
+                <div class="col-md-6">
+                  <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><section class="section section-md">
+        <div class="container">
+          <!--RD Mailform-->
+          <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-8 col-12">
+              <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-name">Input<span class="req-symbol">Sth</span></label>
+                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                </div>
+                <!--Google captcha-->
+                <div class="form-wrap text-left form-validation-left">
+                  <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt"></div>
+                </div>
+                <div class="form-button group-sm text-center text-lg-left">
+                  <button class="button button-primary" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Google Map-->
+      <section class="section">
+        <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+        <!--Please note that YOUR_API_KEY should replaced with your key.-->
+        <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
+        <div class="google-map-container contacts-map" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
+          <div class="google-map"></div>
+          <ul class="google-map-markers">
+            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+          </ul>
+        </div>
+      </section>
+      <a class="section section-banner" href="" target="_blank" style="background-image: url(images/background-01-1920x310.jpg); background-image: -webkit-image-set( url(images/background-01-1920x310.jpg) 1x, url(images/background-01-3840x620.jpg) 2x )"><img src="images/foreground-01-1600x310.png" srcset="images/foreground-01-1600x310.png 1x, images/foreground-01-3200x620.png 2x" alt="" width="1600" height="310"></a>
+      
+      <footer class="section footer-classic section-sm">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <!--Brand--><a class="brand" href="index.html"
+                ><img
+                  class="brand-logo-dark"
+                  src="images/logo-default-200x34.png"
+                  alt=""
+                  width="100"
+                  height="17" /><img
+                  class="brand-logo-light"
+                  src="images/logo-inverse-200x34.png"
+                  alt=""
+                  width="100"
+                  height="17"
+              /></a>
+              <p
+                class="footer-classic-description offset-top-0 offset-right-25"
+              >
+                真的真的只是一个普通的个人网站qwq
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-8 wow fadeInUp">
+              <p class="footer-classic-title">联系信息</p>
+              <div class="d-block offset-top-0">
+                Linyi, Shandong<span class="d-lg-block"
+                  >China</span
+                >
+              </div>
+              <a class="d-inline-block accent-link" href="mailto:qigong_bea@foxmail.com"
+                >qigong_bea@foxmail.com</a
+              ><a class="d-inline-block" href="tel:#">+86 11451419198</a>
+              <ul>
+                <li>
+                  Mon-Thu:<span class="d-inline-block offset-left-10 text-white"
+                    >Maybe No Time</span
+                  >
+                </li>
+                <li>
+                  Fri:<span class="d-inline-block offset-left-10 text-white"
+                    >7:00 AM - 9:30 PM</span
+                  >
+                </li>
+                <li>
+                  Sat-Sun:<span class="d-inline-block offset-left-10 text-white"
+                    >9:00 AM - 9:00 PM Maybe</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+              <p class="footer-classic-title">快速跳转链接</p>
+              <ul class="footer-classic-nav-list">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="projects.html">作品</a></li>
+                <li><a href="yg.html">约稿相关</a></li>
+                <li><a href="lab.html"><del>神奇海螺</del>实验室</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+              <p class="footer-classic-title">新闻</p>
+              <form
+                class="rd-mailform text-left footer-classic-subscribe-form"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action="bat/rd-mailform.php"
+              >
+                <div class="form-wrap">
+                  <label class="form-label" for="subscribe-email"
+                    >你的邮箱地址</label
+                  >
+                  <input
+                    class="form-input"
+                    id="subscribe-email"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                </div>
+                <div class="form-button group-sm text-center text-lg-left">
+                  <button
+                    class="button button-primary button-circle"
+                    type="submit"
+                  >
+                    注册
+                  </button>
+                </div>
+              </form>
+              <p>
+                做第一个发现新闻的人。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container wow fadeInUp" data-wow-delay=".4s">
+          <div class="footer-classic-aside">
+            <p class="rights">
+              <span>&copy;&nbsp;</span>2021-<span class="copyright-year"></span>. 保留所有权利。网站开发使用了TemplateMonster、Font Awesome、jQuery等的模板或技术。
+            </p>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-qq"
+                  href="https://qm.qq.com/cgi-bin/qm/qr?k=eyxv312Hhj5HuDLBS0D2Su80Jzeam6Ms&jump_from=webapi&authKey=6SDplhrQ12QGzcFKpAQFrDMBxHyJU7d4mn55m0ap3HylzX44oqUjnbU/bgQT0mp+"
+                  title="QQ群"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-wechat"
+                  href="https://nothing.here.qwq/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-github"
+                  href="https://github.com/qigongbea/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-bilibili"
+                  href="https://space.bilibili.com/540996565/"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--coded by Drel-->
+  </body>
+</html>

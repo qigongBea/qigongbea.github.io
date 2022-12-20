@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="zh-cn">
+  <head>
+    <title>主页</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fa/all.min.css" />
+    <link rel="stylesheet" href="css/fa/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/fa/brands.min.css" />
+    <link rel="stylesheet" href="css/fa/solid.min.css" />
+    <link rel="stylesheet" href="css/fa/svg-with-js.min.css" />
+    <link rel="stylesheet" href="css/fa/v4-font-face.min.css" />
+    <link rel="stylesheet" href="css/fa/v4-shims.min.css" />
+    <link rel="stylesheet" href="css/fa/v5-font-face.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="你正在使用一个过时的浏览器。请更新您的浏览器至Chrome，Edge，Firefox或任意一个现代浏览器。"
+      /></a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>加载中...</p>
+      </div>
+    </div>
+    <!-- <a
+      class="section section-banner d-none d-xl-block"
+      href="https://www.templatemonster.com/intense-multipurpose-html-template.html"
+      target="_blank"
+      style="
+        background-image: url(images/background-02-1920x60.jpg);
+        background-image: -webkit-image-set(
+          url(images/background-02-1920x60.jpg) 1x,
+          url(images/background-02-3840x120.jpg) 2x
+        );
+      "
+      ><img
+        src="images/foreground-02-1600x60.png"
+        srcset="
+          images/foreground-02-1600x60.png  1x,
+          images/foreground-02-3200x120.png 2x
+        "
+        alt=""
+        width="1600"
+        height="310"
+    /></a> -->
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div
+              class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+              data-rd-navbar-toggle=".rd-navbar-collapse"
+            >
+              <span></span>
+            </div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
+              <div class="rd-navbar-aside">
+                <ul class="list-inline navbar-contact-list">
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-phone"></span>
+                      </div> 
+                      <div class="unit-body">
+                        <a href="tel:#">+86 <del>11451419198</del> 广告位招租（</a>
+                      </div>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-envelope"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a href="mailto:#">qigong_bea@foxmail.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left">
+                        <span class="icon text-middle fa-map-marker"></span>
+                      </div>
+                      <div class="unit-body">
+                        <a href="#">Linyi, Shandong, China</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="social-links">
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-qq"
+                      href="https://qm.qq.com/cgi-bin/qm/qr?k=eyxv312Hhj5HuDLBS0D2Su80Jzeam6Ms&jump_from=webapi&authKey=6SDplhrQ12QGzcFKpAQFrDMBxHyJU7d4mn55m0ap3HylzX44oqUjnbU/bgQT0mp+"
+                      title="QQ群"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-wechat"
+                      href="https://nothing.here.qwq/"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-github"
+                      href="https://github.com/qigongbea/"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-bilibili"
+                      href="https://space.bilibili.com/540996565/"
+                    ></a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"
+                      ><img
+                        class="brand-logo-dark"
+                        src="images/logo-default-200x34.png"
+                        alt=""
+                        width="100"
+                        height="17" /><img
+                        class="brand-logo-light"
+                        src="images/logo-inverse-200x34.png"
+                        alt=""
+                        width="100"
+                        height="17"
+                    /></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="index.html">主页</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="projects.html">作品</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="yg.html"
+                          >约稿相关</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="lab.html">实验室</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--Main section-->
+      <section
+        class="section main-section parallax-scene-js"
+        style="
+          background: url('images/bg-1-1700x803.jpg') no-repeat center center;
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-12">
+              <div class="main-decorated-box text-center text-xl-left">
+                <h1
+                  class="text-white text-xl-center wow slideInRight"
+                  data-wow-delay=".3s"
+                ><span class="biggest d-block d-xl-flex font-weight-bold"
+                >气功豆</span
+              >
+                  <span
+                  class="align-top offset-top-30 d-inline-block font-weight-light prefix-text"
+                  >的</span
+                ><span
+                  class="big font-weight-bold d-inline-flex offset-right-170"
+                  >小站</span
+                >
+                </h1>
+                <div
+                  class="decorated-subtitle text-italic text-white wow slideInLeft"
+                  style="text-shadow:0 0 10px black;"
+                >
+                  只是一个普通的个人网站qwq
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center offset-top-75" data-wow-delay=".2s">
+              <a
+                class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+                href="#"
+                data-custom-scroll-to="about"
+                ><span class="fa-chevron-down"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="decorate-layer">
+          <div class="layer-1">
+            <div class="layer" data-depth=".20">
+              <img
+                src="images/parallax-item-1-563x532.png"
+                alt=""
+                width="563"
+                height="266"
+              />
+            </div>
+          </div>
+          <div class="layer-2">
+            <div class="layer" data-depth=".30">
+              <img
+                src="images/parallax-item-2-276x343.png"
+                alt=""
+                width="276"
+                height="171"
+              />
+            </div>
+          </div>
+          <div class="layer-3">
+            <div class="layer" data-depth=".40">
+              <img
+                src="images/parallax-item-3-153x144.png"
+                alt=""
+                width="153"
+                height="72"
+              />
+            </div>
+          </div>
+          <div class="layer-4">
+            <div class="layer" data-depth=".20">
+              <img
+                src="images/parallax-item-4-69x74.png"
+                alt=""
+                width="69"
+                height="37"
+              />
+            </div>
+          </div>
+          <div class="layer-5">
+            <div class="layer" data-depth=".40">
+              <img
+                src="images/parallax-item-5-72x75.png"
+                alt=""
+                width="72"
+                height="37"
+              />
+            </div>
+          </div>
+          <div class="layer-6">
+            <div class="layer" data-depth=".30">
+              <img
+                src="images/parallax-item-6-45x54.png"
+                alt=""
+                width="45"
+                height="27"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About-->
+      <section class="section section-sm position-relative" id="about">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div
+                class="block-decorate-img wow fadeInLeft"
+                data-wow-delay=".2s"
+              >
+                <img
+                  src="images/home-1-570x703.jpg"
+                  alt=""
+                  width="570"
+                  height="351"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="block-sm offset-top-45">
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s">
+                  关于我
+                </div>
+                <h3
+                  class="wow fadeInLeft text-capitalize devider-bottom"
+                  data-wow-delay=".3s"
+                >
+                  <del>我他妈是<span class="text-primary">做啥</span>的？</del>
+                </h3>
+                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
+                  优质回答：
+                </p>
+                <p
+                  class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp"
+                  data-wow-delay=".4s"
+                >
+                我不到啊
+                </p>
+                <a
+                  class="button-width-190 button-primary button-circle button-lg button offset-top-30"
+                  href="projects.html"
+                  >更多...?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decor-text decor-text-1">&nbsp;&nbsp;&nbsp;&nbsp;关于</div>
+      </section>
+      <!--Features-->
+      <section class="section custom-section position-relative section-md">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 col-lg-7 col-12">
+              <div class="section-name wow fadeInRight">our features</div>
+              <h3
+                class="text-capitalize devider-left wow fadeInLeft"
+                data-wow-delay=".2s"
+              >
+                个人<span class="text-primary">作品</span>
+              </h3>
+              <p>
+                嘤哼哼啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+              </p>
+              <div class="row row-15">
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+                  <div class="box-default">
+                    <div class="box-default-title">DESTORYWARM/泯灭温暖<br>怒九战 (Nujiu Fight)</div>
+                    <p class="box-default-description">
+                      1145141919810.<del>请他妈的点开右上角的作品子页面。</del>
+                    </p>
+                    <span
+                      class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+                  <div class="box-default">
+                    <div class="box-default-title">我还没有那么多作品qwq</div>
+                    <p class="box-default-description">
+                      qwq
+                    </p>
+                    <span
+                      class="box-default-icon novi-icon icon-lg mercury-icon-target-2"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+                  <div class="box-default">
+                    <div class="box-default-title">我还没有那么多作品qwq</div>
+                    <p class="box-default-description">
+                      qwq
+                    </p>
+                    <span
+                      class="box-default-icon novi-icon icon-lg mercury-icon-user"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="box-default">
+                    <div class="box-default-title">我还没有那么多作品qwq</div>
+                    <p class="box-default-description">
+                      qwq
+                    </p>
+                    <span
+                      class="box-default-icon novi-icon icon-lg mercury-icon-partners"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-left-side wow slideInRight" data-wow-delay=".5s">
+          <img
+            src="images/home-2-636x480.jpg"
+            alt=""
+            width="636"
+            height="240"
+          />
+        </div>
+        <div class="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">
+          约稿
+        </div>
+      </section>
+      <!--Counters-->
+      <section class="section bg-image-2">
+        <div class="container section-md">
+          <div class="row row-30 text-center">
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number">
+                  <span
+                    class="icon-lg novi-icon offset-right-10 mercury-icon-time"
+                  ></span
+                  ><span class="counter text-white" data-speed="2000"
+                    >2009</span
+                  >
+                </div>
+                <div class="counter-classic-title">出生年份</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number">
+                  <span
+                    class="icon-lg novi-icon offset-right-10 mercury-icon-folder"
+                  ></span
+                  ><span class="counter text-white" data-speed="2000">1</span>
+                </div>
+                <div class="counter-classic-title">完成项目</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number">
+                  <span
+                    class="icon-lg novi-icon offset-right-10 mercury-icon-users"
+                  ></span
+                  ><span class="counter text-white" data-speed="2000">0</span
+                  ><span class="symbol text-white">-</span>
+                </div>
+                <div class="counter-classic-title">约稿人数</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number">
+                  <span
+                    class="icon-lg novi-icon offset-right-10 mercury-icon-group"
+                  ></span
+                  ><small>￥</small><span class="counter text-white" data-speed="2000"
+                    >0</span
+                  >
+                </div>
+                <div class="counter-classic-title">盈利</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Pricing-->
+      <section
+        class="section section-md bg-xs-overlay"
+        style="
+          background: url('images/bg-image-3-1700x883.jpg') no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="row row-50 justify-content-center">
+            <div class="col-12 text-center col-md-10 col-lg-8">
+              <div class="section-name wow fadeInRight" data-wow-delay=".2s">
+                约稿详情
+              </div>
+              <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">
+                <del>请他妈给我<span class="text-primary">约稿</span
+                >钱。不然我就毙了你。</del>
+              </h3>
+              <p>
+                目前不开放约稿
+              </p>
+            </div>
+          </div>
+          <div class="row row-30 justify-content-center">
+            <div
+              class="col-xl-4 col-md-6 col-12 wow fadeInDown"
+              data-wow-delay=".3s"
+            >
+              <div class="pricing-box bg-gray-dark">
+                <div class="pricing-box-tittle">约稿规则</div>
+                <p>一定要看完，<br>因为阅读是免费的</p>
+                <hr />
+                <div class="pricing-box-inner">
+                  <span class="pricing-box-symbol">￥</span
+                  ><span class="pricing-box-price">0</span>
+                </div>
+                <div class="pricing-box-label bg-gray">永久</div>
+                <p>
+                  普通的规则 <br />
+                  但是很复杂。
+                </p>
+                <a
+                  class="button button-190 button-circle btn-primary-rounded"
+                  href="#"
+                  >敬请期待</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="pricing-box bg-gray-primary" style="margin-top:30px">
+                <div class="pricing-box-tittle">约稿价格计算器</div>
+                <p>如果你懒得看规则的话，<br>可以直接用这个来计算价格</p>
+                <hr />
+                <div class="pricing-box-inner">
+                  <span class="pricing-box-symbol">￥</span
+                  ><span class="pricing-box-price">0</span>
+                </div>
+                <div class="pricing-box-label bg-gray-primary-light">
+                  永久
+                </div>
+                <p>
+                  当然， <br />
+                  计算也是免费的。
+                </p>
+                <a
+                  class="button button-190 button-circle btn-rounded-outline"
+                  href="#"
+                  style="background-color:#404044"
+                  >敬请期待</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-md-6 col-12 wow fadeInDown"
+              data-wow-delay=".3s"
+            >
+              <div class="pricing-box bg-gray-dark" style="margin-top:60px">
+                <div class="pricing-box-tittle">优惠</div>
+                <p>因为某些原因，<br>好盆友可以获得每月优惠券（</p>
+                <hr />
+                <div class="pricing-box-inner">
+                  <span class="pricing-box-symbol">代金券￥</span
+                  ><span class="pricing-box-price">20</span>
+                </div>
+                <div class="pricing-box-label bg-gray">每月</div>
+                <p>
+                  友谊并不是无价的 <br />
+                  （确信
+                </p>
+                <a
+                  class="button button-190 button-circle btn-primary-rounded"
+                  href="#"
+                  >敬请期待</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Owl Carousel-->
+      <section class="section section-md bg-gray-lighten">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div
+                class="section-name wow fadeInRight text-center"
+                data-wow-delay=".2s"
+              >
+                评价
+              </div>
+              <h3
+                class="wow fadeInLeft text-capitalize text-center"
+                data-wow-delay=".3s"
+              >
+                来约稿的人都是<span class="text-primary">怎么评价我</span>的？
+              </h3>
+              <div
+                class="owl-carousel review-carousel"
+                data-items="1"
+                data-sm-items="1"
+                data-md-items="1"
+                data-lg-items="1"
+                data-xl-items="1"
+                data-xxl-items="1"
+                data-dots="true"
+                data-nav="false"
+                data-stage-padding="0"
+                data-loop="false"
+                data-margin="0"
+                data-mouse-drag="true"
+                data-autoplay="false"
+              >
+                <div class="item">
+                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+                    <img
+                      src="images/user-1-216x216.jpg"
+                      alt=""
+                      width="216"
+                      height="108"
+                    />
+                  </div>
+                  <div
+                    class="item-description wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <p>
+                      [[BIG SHOT]]
+                    </p>
+                    <div class="item-subsection">
+                      <span class="item-subsection-title devider-left"
+                        >Spamton G. Spamton</span
+                      ><span>TRASH BOY</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+                    <img
+                      src="images/user-2-216x216.jpg"
+                      alt=""
+                      width="216"
+                      height="108"
+                    />
+                  </div>
+                  <div
+                    class="item-description wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <p>
+                      <del>广告位招租11111111</del>
+                    </p>
+                    <div class="item-subsection">
+                      <span class="item-subsection-title devider-left"
+                        >Q5U4EX7YY2E9N</span
+                      ><span>BIG SMARTER</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+                    <img
+                      src="images/user-3-216x216.jpg"
+                      alt=""
+                      width="216"
+                      height="108"
+                    />
+                  </div>
+                  <div
+                    class="item-description wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <p>
+                      <del>广告位招租11111111</del>
+                    </p>
+                    <div class="item-subsection">
+                      <span class="item-subsection-title devider-left"
+                        >印尼小哥</span
+                      ><span>宽带推销员</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+                    <img
+                      src="images/user-4-216x216.jpg"
+                      alt=""
+                      width="216"
+                      height="108"
+                    />
+                  </div>
+                  <div
+                    class="item-description wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <p>
+                      <del>广告位招租11111111</del>
+                    </p>
+                    <div class="item-subsection">
+                      <span class="item-subsection-title devider-left"
+                        >Rick Astley</span
+                      ><span>专业诈骗员</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer--><a
+        class="section section-banner"
+        href="#"
+        target="_blank"
+        style="
+          background-image: url(images/background-01-1920x310.jpg);
+          background-image: -webkit-image-set(
+            url(images/background-01-1920x310.jpg) 1x,
+            url(images/background-01-3840x620.jpg) 2x
+          );
+        "
+        ><img
+          src="images/foreground-01-1600x310.png"
+          srcset="
+            images/foreground-01-1600x310.png 1x,
+            images/foreground-01-3200x620.png 2x
+          "
+          alt=""
+          width="1600"
+          height="310"
+      /></a>
+      <footer class="section footer-classic section-sm">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <!--Brand--><a class="brand" href="index.html"
+                ><img
+                  class="brand-logo-dark"
+                  src="images/logo-default-200x34.png"
+                  alt=""
+                  width="100"
+                  height="17" /><img
+                  class="brand-logo-light"
+                  src="images/logo-inverse-200x34.png"
+                  alt=""
+                  width="100"
+                  height="17"
+              /></a>
+              <p
+                class="footer-classic-description offset-top-0 offset-right-25"
+              >
+                真的真的只是一个普通的个人网站qwq
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-8 wow fadeInUp">
+              <p class="footer-classic-title">联系信息</p>
+              <div class="d-block offset-top-0">
+                Linyi, Shandong<span class="d-lg-block"
+                  >China</span
+                >
+              </div>
+              <a class="d-inline-block accent-link" href="mailto:qigong_bea@foxmail.com"
+                >qigong_bea@foxmail.com</a
+              ><a class="d-inline-block" href="tel:#">+86 11451419198</a>
+              <ul>
+                <li>
+                  Mon-Thu:<span class="d-inline-block offset-left-10 text-white"
+                    >Maybe No Time</span
+                  >
+                </li>
+                <li>
+                  Fri:<span class="d-inline-block offset-left-10 text-white"
+                    >7:00 AM - 9:30 PM</span
+                  >
+                </li>
+                <li>
+                  Sat-Sun:<span class="d-inline-block offset-left-10 text-white"
+                    >9:00 AM - 9:00 PM Maybe</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+              <p class="footer-classic-title">快速跳转链接</p>
+              <ul class="footer-classic-nav-list">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="projects.html">作品</a></li>
+                <li><a href="yg.html">约稿相关</a></li>
+                <li><a href="lab.html"><del>神奇海螺</del>实验室</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+              <p class="footer-classic-title">新闻</p>
+              <form
+                class="rd-mailform text-left footer-classic-subscribe-form"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action="bat/rd-mailform.php"
+              >
+                <div class="form-wrap">
+                  <label class="form-label" for="subscribe-email"
+                    >你的邮箱地址</label
+                  >
+                  <input
+                    class="form-input"
+                    id="subscribe-email"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                </div>
+                <div class="form-button group-sm text-center text-lg-left">
+                  <button
+                    class="button button-primary button-circle"
+                    type="submit"
+                  >
+                    注册
+                  </button>
+                </div>
+              </form>
+              <p>
+                做第一个发现新闻的人。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container wow fadeInUp" data-wow-delay=".4s">
+          <div class="footer-classic-aside">
+            <p class="rights">
+              <span>&copy;&nbsp;</span>2021-<span class="copyright-year"></span>. 保留所有权利。网站开发使用了TemplateMonster、Font Awesome、jQuery等的模板或技术。
+            </p>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-qq"
+                  href="https://qm.qq.com/cgi-bin/qm/qr?k=eyxv312Hhj5HuDLBS0D2Su80Jzeam6Ms&jump_from=webapi&authKey=6SDplhrQ12QGzcFKpAQFrDMBxHyJU7d4mn55m0ap3HylzX44oqUjnbU/bgQT0mp+"
+                  title="QQ群"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-wechat"
+                  href="https://nothing.here.qwq/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-github"
+                  href="https://github.com/qigongbea/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-bilibili"
+                  href="https://space.bilibili.com/540996565/"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--coded by Drel-->
+  </body>
+</html>
