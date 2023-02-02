@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兽名数目在线计算器</title>
+</head>
+<body>
+    <h3>兽名数目在线计算器</h3>
+    英文字符串：<input id="input" value="CYBER'S">&nbsp;(其他字符会被忽略)<br>
+    兽名数目：<span id="ans"></span>
+    &nbsp;&nbsp;&nbsp;
+    <button onclick="javascript:copy();">复制</button>
+    &nbsp;&nbsp;&nbsp;
+    <span id="warn" style="display: none;">你的浏览器不支持复制文本到剪贴板，请自行输入！</span>
+    <br><br>
+    <a href="https://baike.baidu.com/item/%E5%85%BD%E5%90%8D%E6%95%B0%E7%9B%AE/1800304">关于兽名数目</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="javascript:alert('部分大小写，A为100，B为101，以此类推，最终累加')">计算方法</a>
+    <script>
+        const ans=document.getElementById("ans");
+        const warn=document.getElementById("warn");
+        let a=0;
+        function getCharCode(str){
+            let cache=['abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+            if(cache[0].indexOf(str)+cache[1].indexOf(str)==-2) return 0;
+            if(cache[0].indexOf(str)==-1) return cache[1].indexOf(str)+100;
+            if(cache[1].indexOf(str)==-1) return cache[0].indexOf(str)+100;
+        }
+        function copy(){
+            navigator.clipboard.writeText(a);
+        }
+        setInterval(function(){
+            const val=document.getElementById("input").value;
+            a=0;
+            for(let i=0;i<=val.length-1;i++){
+                let charCode=getCharCode(val[i]);
+                a+=charCode;
+            }
+            if(a===666) ans.innerText=a+' The Num of Devil.';
+            else ans.innerText=a;
+
+            if(navigator.clipboard===undefined) warn.style.display='inline';
+            else warn.style.display='none';
+        },10);
+    </script>
+</body>
+</html>
